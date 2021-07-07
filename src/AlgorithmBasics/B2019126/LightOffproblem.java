@@ -31,9 +31,13 @@ public class LightOffproblem {
     }
 
     public static void main(String[] args){
+        int a = -5;
+        System.out.println(a>>4);
         byte b = 0b10;
         byte d= (1<<2);
         byte c = ~(1 << 2);
+        System.out.println(Integer.toHexString(a&0xff));
+        System.out.println(Integer.toHexString(c&0xff));
         b &= ~(1 << 2);
 //        System.out.println(b);
 //        Scanner sc=new Scanner(System.in);

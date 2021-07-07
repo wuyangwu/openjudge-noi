@@ -54,8 +54,8 @@ public class FileReaderWriterTest {
     //
     @Test
     public void test3() throws IOException {
-        File fileReader = new File("");
-        File fileWriter = new File("");
+        File fileReader = new File("");  // 读
+        File fileWriter = new File(""); // 写
         FileInputStream fr = new FileInputStream(fileReader);
         FileOutputStream fw = new FileOutputStream(fileWriter);
         byte[] cbuf  = new byte[1024];
@@ -64,6 +64,11 @@ public class FileReaderWriterTest {
             fw.write(cbuf,0,len);
         }
 
+    }
+
+    @Test
+    public void test4(){
+        System.out.println(new File("").getPath());
     }
 
 }

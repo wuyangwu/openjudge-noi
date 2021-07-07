@@ -27,8 +27,17 @@ public class TcpTest2 {
         while ((len = fis.read(buffer))!= -1){
             os.write(buffer,0,len);
         }
+        // 关闭输入端
+        socket.shutdownOutput();
+        // 接受来自于服务端的反馈
+        InputStream is = socket.getInputStream();
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        byte[] buffer1 = new byte[1024];
+        while ((len = is.read(buffer1))!= -1){
+            baos.write(buffer1,0,len);
+        }
+        System.out.println(baos.toString());
 
-        // 接受来自于
         os.close();
         fis.close();
         socket.close();

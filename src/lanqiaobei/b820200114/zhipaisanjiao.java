@@ -25,7 +25,7 @@ public class zhipaisanjiao {
         for(int i = 0 ; i < 9;i++){
             if(a[i] == 0){
                 a[i]=1;
-                b[i] = i;
+                b[n] = i;
                 dfs(n+1);
                 a[i] = 0;
             }

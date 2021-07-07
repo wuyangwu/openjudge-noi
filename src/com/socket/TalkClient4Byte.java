@@ -13,7 +13,18 @@ import java.net.SocketAddress;
  * @version 1.0
  * @date 2021/1/22 16:09
  */
+
+class clazz{
+    String name;
+
+}
+
+class Student extends clazz{
+    String username;
+}
+
 public class TalkClient4Byte {
+
     private Socket socket;
     private SocketAddress address;
 

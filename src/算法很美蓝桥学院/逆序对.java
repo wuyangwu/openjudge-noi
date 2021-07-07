@@ -45,6 +45,7 @@ public class 逆序对 {
         for (int i = 0; i <10; i++) {
         	System.out.print(a[i]+" ");
 		}
+		System.out.println();
         System.out.println(ans);
 	}
 

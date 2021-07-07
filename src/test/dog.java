@@ -31,10 +31,10 @@ private String name;
 		this.typeString = typeString;
 	}
 
-	@Override
-	public String toString() {
-		return "猫 的名字=" + name + ", 年龄=" + year + ", 类型=" + typeString + "";
-	}   
+//	@Override
+//	public String toString() {
+//		return "猫 的名字=" + name + ", 年龄=" + year + ", 类型=" + typeString + "";
+//	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

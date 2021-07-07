@@ -148,6 +148,9 @@ public class SeasonTest {
         System.out.println( Season.AUTUMN.getSeasonName());*/
         System.out.println(Season1.AUTUMN);
         System.out.println(Season1.AUTUMN.getSeasonName());
+        Season1 season1 = Season1.AUTUMN;
+        Season1 season11 = Season1.SPRING;
+        System.out.println(season1 == season11);
        Season1.AUTUMN.show();
     }
 }

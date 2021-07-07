@@ -26,7 +26,10 @@ public class OptionalUser {
 
     public static void main(String[] args ){
         User user = new User("吴同学","wuStudent@qq.com");
-        System.out.println(Optional.ofNullable(user).map(u-> u).get().getEmail());
+        Optional.ofNullable(user).map((u)-> {
+            return u;
+        }).get().getEmail();
+        System.out.println(getUser(user));
 //        System.out.println(getUser(user));
     }
 }
